@@ -1,3 +1,6 @@
+:root{
+	--ballW: 20%;
+}
 @font-face {
     font-family: silka;
     src: url('../fonts/silka/silka-regular-webfont.woff');
@@ -464,6 +467,34 @@ section h1:before{
     max-width: 375px;
     min-width: 375px;
     vertical-align: middle;
+}
+
+.project .ballContainer{
+	background: black;
+	max-width: 375px;
+	min-width: 375px;
+	vertical-align: middle;
+}
+
+.project .ball{
+	position: relative;
+	width: var(--ballW);
+	aspect-ratio: 1/1;
+	background: white;
+	border-radius: 50%;
+	animation: bounce 0.6s cubic-bezier(.12,.23,.25,1) 0s infinite alternate;
+	left: calc(50% - (var(--ballW)/2));
+}
+
+@keyframes bounce{
+	from {
+		top: 100%;
+		transform: translateY(-100%);
+	}
+	to {
+		top: 0%;
+		transform: translateY(20%);
+	}
 }
 
 .project .info{
