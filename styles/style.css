@@ -1,5 +1,5 @@
 :root{
-	--ballW: 20%;
+	--ballW: 10%;
 }
 @font-face {
     font-family: silka;
@@ -470,6 +470,7 @@ section h1:before{
 }
 
 .project .ballContainer{
+	height: 200px;
 	background: black;
 	max-width: 375px;
 	min-width: 375px;
