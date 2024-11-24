@@ -464,16 +464,17 @@ section h1:before{
 }
 
 .project img{
-    max-width: 375px;
-    min-width: 375px;
+    max-width: 280px;
+    min-width: 280px;
     vertical-align: middle;
+    image-rendering: pixelated;
 }
 
 .project .ballContainer{
 	height: 200px;
 	background: black;
-	max-width: 375px;
-	min-width: 375px;
+	max-width: 280px;
+	min-width: 280px;
 	vertical-align: middle;
 }
 
